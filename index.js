@@ -44,12 +44,18 @@ app.post("/api/assistant-ia", async (req, res) => {
 });
 
 
-// 6. Démarrage du serveur sur le port 8080
+// ... fin de votre bloc catch précédent (ligne 43/44)
+    }
+}); // <-- Vérifiez que la route précédente est bien fermée ici
+
+// 6. Démarrage du serveur et définition des routes globales
 const PORT = process.env.PORT || 8080;
+
 app.get('/', (req, res) => {
-    res.send('Le serveur de l\'API fonctionne parfaitement !');
+    res.send("Le serveur de l'API fonctionne parfaitement !");
 });
 
 app.listen(PORT, () => {
-    console.log(`🚀 Serveur démarré avec succès sur http://localhost:${PORT}`);
+    console.log(`Serveur démarré avec succès sur le port ${PORT}`);
 });
+
