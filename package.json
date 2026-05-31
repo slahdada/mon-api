@@ -1,5 +1,6 @@
+
 {
-  "name": "mon-api",
+  "name": "API mon",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
