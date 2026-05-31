@@ -46,6 +46,9 @@ app.post("/api/assistant-ia", async (req, res) => {
 
 // 6. Démarrage du serveur sur le port 8080
 const PORT = process.env.PORT || 8080;
+app.get('/', (req, res) => {
+    res.send('Le serveur de l\'API fonctionne parfaitement !');
+});
 
 app.listen(PORT, () => {
     console.log(`🚀 Serveur démarré avec succès sur http://localhost:${PORT}`);
